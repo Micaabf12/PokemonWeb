@@ -3,9 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/styles.css" rel="stylesheet">
+    <link href="./css/nav.css" rel="stylesheet"/>
+    <link href="./css/index.css" rel="stylesheet"/>
+    <link href="./css/footer.css" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/bcc9a595b3.js" crossorigin="anonymous"></script>
     <title>Pokemon!</title>
 </head>
 <body>
-    
+    <header class="header">
+        <div class="menu">
+            <div class="logo">
+                <img class="logo-img" src="./img/logo.png" alt="logo">
+            </div>
+            <div class="background" id="back-menu"></div>
+            <nav class="nav" id="nav">
+                <img class="logo-img" src="./img/logo.png" alt="logo">
+                <a href="./index.html">Inicio</a>
+                <a href="./html/historia.html">Historia</a>
+                <a href="./html/entrenadores.html">Entrenadores</a>
+                <a href="./html/pokemones.html">Pokemones</a>
+                <a href="./html/pokedex.html">Pokédex</a>
+                <a href="./html/acercade.html">Acerca de</a>
+            </nav>
+            <div class="btn_menu" id="btn_menu">
+                <label for="checkbox" class="hamburguer" id="btn">
+                    <input type="checkbox" id="checkbox">
+                    <span class="line line-main"></span>
+                    <span class="line line-split"></span>
+                </label>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="texto-bienvenida">
+            <h1>¡Bienvenido(a) a la Pokeweb!</h1>
+            <div class="slider-frame">
+                <ul>
+                    <li><img src="./img/slide1.png" alt=""></li>
+                    <li><img src="./img/slide2.png" alt=""></li>
+                    <li><img src="./img/slide3.png" alt=""></li>
+                    <li><img src="./img/slide4.png" alt=""></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="box-footer">
+                <div class="logo-footer">
+                    <img src="./img/logo.png" alt="logo">
+                </div>
+            </div>
+            <div class="box-footer">
+                <div class="footer-contenido">
+                    <h2>Contenido</h2>
+                </div>
+                <div class="contenido">
+                    <a href="./index.html">Inicio</a>
+                    <a href="./html/historia.html">Historia</a>
+                    <a href="./html/entrenadores.html">Entrenadores</a>
+                    <a href="./html/pokemones.html">Pokemones</a>
+                    <a href="./html/pokedex.html">Pokédex</a>
+                    <a href="./html/acercade.html">Acerca de</a>
+                </div>
+            </div>
+            <div class="box-footer">
+                <h2>Redes Sociales</h2>
+                <a href="https://www.facebook.com/PokemonOficialLatAm" target="_blank"><i class="fa-brands fa-square-facebook"></i> Facebook</a>
+                <a href="https://www.instagram.com/pokemon" target="_blank"><i class="fa-brands fa-square-instagram"></i> Instagram</i></a>
+                <a href="https::/www.twitter.com/Pokemon" target="_blank"><i class="fa-brands fa-square-twitter"></i> Twitter</i></a>
+            </div>
+        </div>
+        <div class="box-copyright">
+            <p>Todos los derechos reservados © 2024 <b>Micaela Belen Fronti</b></p>
+        </div>
+    </footer>
+    <script src="./js/nav.js"></script>
 </body>
 </html>
