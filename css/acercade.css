@@ -1,0 +1,70 @@
+.section-info{
+    position: relative;
+    margin-bottom: 50px;
+
+    contain: content;
+}
+
+
+.container-info{
+    width: 100%;
+}
+
+.container-info img {
+    max-width: 30vw;
+    float: right;
+    margin: 10px 20px 0px 10px;
+}
+
+
+.container-la-creadora{
+    width: 100%;
+    contain: content;
+    text-align: center;
+}
+
+.container-la-creadora img {
+    width: 15vw;
+    float: left;
+    margin: 10px 10px 0px 20px;
+    border-radius: 50%;
+}
+
+.container-img-creadora{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-evenly;
+}
+
+.container-el-creador h3{
+    margin-top: 10px;
+}
+
+.container-el-creador p{
+    text-align: center;
+}
+
+.container-el-creador .info{
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+.container-el-creador .info-2{
+    margin-top: 0;
+    padding-top: 0;
+    font-style: italic;
+}
+
+.container-el-creador .contacto{
+    color: var(--azul-intenso);
+    font-weight: 600;
+}
+
+.container-el-creador i{
+    color: var(--verde-azulado);
+    font-size: 30px;
+    text-align: center;
+}

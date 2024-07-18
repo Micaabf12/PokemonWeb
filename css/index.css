@@ -1,0 +1,106 @@
+h1{
+    padding: inherit;
+}
+
+h2{
+    padding: inherit;
+}
+
+p{
+    padding: inherit;
+    text-align: center;
+}
+
+.texto-bienvenida{
+    margin: 0;
+    text-align: center;
+    max-width: 100vw;
+}
+
+.slider-frame{
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    max-width: 100vw;
+    height: 75vh;
+    overflow: hidden;
+}
+
+.slider-frame ul{
+    display: flex;
+    width: 400%;
+    animation: slide 12s infinite alternate ease-in-out;
+}
+
+.slider-frame li{
+    list-style: none;
+    width: 100%;
+}
+
+.slider-frame img{
+    margin-top: 15px;
+    width: 55%;
+}
+
+@keyframes slide{
+    0%{margin-left: 0%;}
+    20%{margin-left: 0%;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+
+}
+
+/* Responsive */
+
+@media screen and (min-width: 1024px) {
+
+}
+  
+/* Smarthphone */
+@media screen and (max-width: 767px) {
+    body{
+        height: 100vh;
+        max-height: 100vh;
+    }
+    
+    main{
+        height: 80vh;
+        display: relative;
+        margin: auto;
+    }
+
+    .texto-bienvenida{
+        margin-top: 15vh;
+        position: relative;
+    }
+
+    .slider-frame{
+        height: 80vh;
+        overflow: hidden;
+    }
+
+    .slider-frame img{
+        margin-top: 15px;
+        width: 80%;
+    }
+}
+  
+/* Tablet */
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    body{
+        height: 100vh;
+    }
+
+    main{
+        height: 75vh;
+        display: relative;
+        margin: auto;
+    }
+}

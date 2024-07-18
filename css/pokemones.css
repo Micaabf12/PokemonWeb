@@ -1,0 +1,247 @@
+:root{
+    --electric: #fbd200;
+    --normal: #949da5;
+    --fire: #ff983f;
+    --water: #3393dd;
+    --ice: #59d5c5;
+    --rock: #c9b787;
+    --flying: #8aace4;
+    --grass: #35c04a;
+    --psychic: #ff6676;
+    --ghost: #4b6ab3;
+    --bug: #84c400;
+    --poison: #b86bd0;
+    --ground: #e97333;
+    --dragon: #0070ca;
+    --steel: #5a8fa3;
+    --fighting: #e12c6a;
+    --faisy: #fb8aec;
+    --dark: #5b5366;
+}
+
+.section-info{
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.container-info{
+    width: 100%;
+}
+
+.container-info img {
+    width: 35%;
+    float: right;
+    margin: 10px 10px 0 20px;
+}
+
+.container-info p{
+    margin-right: 10px;
+}
+
+.section-types{
+    position: relative;
+}
+
+/* Tipos de Pokemon */
+
+.container-types {
+    position: relative;
+    display: flex;
+    width: 80vw;
+    margin: auto;
+}
+
+.panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 35vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.55;
+    margin: 10px;
+    position: relative;
+    transition: all 700ms ease-in;
+}
+
+.panel.active::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.25)60%,rgba(0,0,0,0) 100%);
+    border-radius: 50px;
+    z-index: 1;
+}
+
+.panel img{
+    width: 35px;
+    position: absolute;
+    bottom: 5px;
+    background-color: white;
+    border-radius: 50%;
+    left: 30%;
+    transition: ease-out 1s;
+}
+
+.panel.active img{
+    left: 10%;
+    z-index: 2;
+}
+
+.panel h3 {
+    font-size: 24px;
+    position: absolute;
+    margin: 0;
+    opacity: 0;
+    position: absolute;
+    font-size: 1.3em;
+    line-height: 0;
+    margin: 0;
+    font-family: monospace;
+    bottom: 20px;
+    left: 70px;
+    text-shadow: #e0e0e0 1px 1px 0;
+    z-index: 2;
+}
+
+.panel .acero {
+    color: var(--steel)
+}
+
+.panel .agua{
+    color: var(--water)
+}
+
+.panel .bicho{
+    color: var(--bug)
+}
+
+.panel .dragon{
+    color: var(--dragon)
+}
+
+.panel .electrico{
+    color: var(--electric)
+}
+
+.panel .fantasma{
+    color: var(--ghost)
+}
+
+.panel .fuego{
+    color: var(--fire)
+}
+
+.panel .hada{
+    color: var(--faisy)
+}
+
+.panel .hielo{
+    color: var(--ice)
+}
+
+.panel .lucha{
+    color: var(--fighting)
+}
+
+.panel .normal{
+    color: var(--normal)
+}
+
+.panel .planta{
+    color: var(--grass)
+}
+
+.panel .psiquico{
+    color: var(--psychic)
+}
+
+.panel .roca{
+    color: var(--rock)
+}
+
+.panel .siniestro{
+    color: var(--dark)
+}
+
+.panel .tierra{
+    color: var(--ground)
+}
+
+.panel .veneno{
+    color: var(--poison)
+}
+
+.panel .volador{
+    color: var(--flying)
+}
+
+.panel.active {
+    flex: 2;
+}
+
+.panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+/* Responsive */
+
+/* Smarthphone */
+@media screen and (max-width: 767px) {
+    .container-types{
+        margin: auto; 
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 90vw;
+        flex-direction: row;
+    }
+
+    .panel {
+        max-width: 90vw;
+        height: 15vh;
+        border-radius: 10px;
+        flex: 1;
+        margin: 3px auto;
+    }
+
+    .panel h3 {
+        left: 50px;
+        bottom: 22px;
+    }
+
+    .panel .type{
+        width: 80vw;
+    }
+
+    .panel.active {
+        flex: 1;
+        height: 30vh;
+    }
+
+    .panel img{
+        width: 30px;
+        bottom: 25%;
+        left: 5%;
+    }
+    
+    .panel.active img{
+        left: 5%;
+        bottom: 5%;
+        z-index: 2;
+    }
+    .panel.active::after{
+        background: linear-gradient(to top, rgba(0,0,0,0.45)60%,rgba(0,0,0,0) 100%);
+        border-radius: 10px;
+        z-index: 1;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+
+}

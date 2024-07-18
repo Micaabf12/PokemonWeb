@@ -1,0 +1,29 @@
+.section-info{
+    position: relative;
+    margin-bottom: 50px;
+
+    contain: content;
+}
+
+
+.container-info{
+    width: 100%;
+}
+
+.container-info img {
+    max-width: 30vw;
+    float: right;
+    margin: 10px 20px 0px 10px;
+}
+
+
+.container-la-serie{
+    width: 100%;
+    contain: content;
+}
+
+.container-la-serie img {
+    width: 15vw;
+    float: left;
+    margin: 10px 10px 0px 20px;
+}
